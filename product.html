@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">STUDENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book.html">LIBRARY</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+          <div class="row">
+              <div class="col col-sm-2"></div>
+              <div class="col col-12 col-sm-8">
+                  <form>
+                      <table class="table">
+                          <tr>
+                              <td>PRODUCT NAME</td>
+                              <td><input type="text" id="pro" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td>MANUFACTURER</td>
+                              <td><input type="text" id="mnfctr" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td> DiSTRIBUTOR </td>
+                              <td><input type="text" id="disb" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td>DISCTRICT</td>
+                              <td>
+                                <select id="dis" class="form-control">
+                                <option value=""></option>
+                                <option value="Kasargod">Kasargod</option>   
+                                <option value="Kannur">Kannur</option>      
+                                <option value="Wayanad">Wayanad</option>
+                                <option value="Kozhikode">Kozhikode</option>
+                                <option value="Malappuram">Malappuram</option>
+                                <option value="Palakkad">Palakkad</option> 
+                                <option value="Thrissur">Thrissur</option>
+                                <option value="Ernakulam">Ernakulam</option>
+                                <option value="Idukki">Idukki</option>
+                                <option value="Kottayam">Kottayam</option>
+                                <option value="Pathanamthitta">Pathanamthitta</option> 
+                                <option value="Alappuzha">Alappuzha</option>
+                                <option value="Kollam">Kollam</option>
+                                <option value="Thiruvananthapuram">Thiruvananthapuram</option>                                         
+                                </select>
+                               </td>
+                          </tr>
+                          <tr>
+                              <td>PRICE</td>
+                              <td><input type="text" id="price" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+                              <td><button type="button" class="btn btn-success" onclick="product();">SUBMIT</button></td>
+                          </tr>
+                      </table>
+                  </form>
+              </div>
+              <div class="col col-sm-2"></div>
+         </div>
+      </div>
+      <script>
+          function product(){
+              var pro=document.getElementById("pro").value;
+              var mnfctr=document.getElementById("mnfctr").value;
+              var disb=document.getElementById("disb").value;
+              var dis=document.getElementById("dis").value;
+              var price=document.getElementById("price").value;
+
+              console.log("Product Name : " pro);
+              console.log("Manufacturer : " mnfctr);
+              console.log("Distributor : " disb);
+              console.log("District : " dis);
+              console.log("Price : " price);
+          }
+      </script>
+</body>
+</html>

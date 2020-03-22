@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">INDEX</a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">STUDENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book.html">LIBRARY</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="row">
+            <div class="col col-sm-2"></div>
+            <div class="col col-12 col-sm-8">
+                <form>
+                    <table class="table table-borderless">  
+                                <tr>
+                                    <td>NAME</td>
+                                    <td><input type="text" class="form-control" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td>ROLL NO.</td>
+                                    <td><input type="text" class="form-control" id="roll"></td>
+                                </tr>
+                                <tr>
+                                    <td>ADMISSION NO.</td>
+                                    <td><input type="text" class="form-control" id="adm"></td>
+                                </tr>
+                                <tr>
+                                    <td>COLLEGE</td>
+                                    <td><input type="text" class="form-control" id="clg"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button type="button" class="btn btn-info" onclick="student();"> SUBMIT </button></td>
+                                </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col col-sm-2"></div>
+        </div>
+    </div>
+    <script>
+        function student(){
+            var Name=document.getElementById("name").value;
+            var Rollno=document.getElementById("rollno").value;
+            var Admno=document.getElementById("adm").value;
+            var College=document.getElementById("clg").value;
+            console.log("Name: " Name);
+            console.log("Roll No: "  Rollno);
+            console.log("Admission No: " Admno);
+            console.log("College: " College);           
+
+        }
+    </script>
+</body>
+</html>
